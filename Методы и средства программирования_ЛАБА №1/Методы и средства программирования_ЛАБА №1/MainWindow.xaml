@@ -1,0 +1,63 @@
+﻿<Window x:Class="Методы_и_средства_программирования_ЛАБА__1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Методы_и_средства_программирования_ЛАБА__1"
+        mc:Ignorable="d"
+        Title="Работа с массивом в C#" Height="450" Width="809" MinHeight="450" MaxHeight="450" MinWidth="809" MaxWidth="809">
+    <Grid>
+        <GroupBox>
+            <StackPanel>
+                <Label Name="label1" Content="Количество элементов" Margin="24,35,600,359"></Label>
+                <Label Name="label2" Content="Результат" Margin="488,-417,220,370" Height="26"></Label>
+                <TextBox Height="28" Margin="24,-356,0,0" Name="textbox1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="152">
+                    <TextBox.ToolTip>
+                        <ToolTip>
+                            В поле вводится необходимое количество элементов для массива
+                        </ToolTip>
+                    </TextBox.ToolTip>
+                </TextBox>
+                <TextBox Height="28" Margin="92,-316,0,0" Name="textbox2" VerticalAlignment="Top" HorizontalAlignment="Left" Width="84">
+                    <TextBox.ToolTip>
+                        <ToolTip>
+                            Параметр K, необходимый для заданий [4.] и [5.]
+                        </ToolTip>
+                    </TextBox.ToolTip>
+                </TextBox>
+                <Button Height="30" Margin="35,-261,0,254" Name="button1" VerticalAlignment="Center" HorizontalAlignment="Left" Width="108" Content="РАСЧЁТ1" Click="button1_Click">
+                    <Button.ToolTip>
+                        <ToolTip>
+                            Генерирует и печатает массив в Список№1
+                        </ToolTip>
+                    </Button.ToolTip>
+                </Button>
+                <Button Height="30" Margin="35,-186,0,23" Name="button2" VerticalAlignment="Center" HorizontalAlignment="Left" Width="108" Content="ЗАДАНИЯ" Click="button2_Click">
+                    <Button.ToolTip>
+                        <ToolTip>
+                            Генерирует и печатает массив в Список№1
+                            Печатает результаты заданий для массива в Список№2
+                        </ToolTip>
+                    </Button.ToolTip>
+                </Button>
+                <Button Height="30" Margin="35,-180,0,158" Name="button3" VerticalAlignment="Center" HorizontalAlignment="Left" Width="108" Content="СОХРАНИТЬ" Click="button3_Click">
+                    <Button.ToolTip>
+                        <ToolTip>
+                            Сохраняет результаты в виде файла на компьютер
+                        </ToolTip>
+                    </Button.ToolTip>
+                </Button>
+                <Button Height="30" Margin="35,-271,0,206" Name="button4" VerticalAlignment="Center" HorizontalAlignment="Left" Width="108" Content="РАСЧЁТ2" Click="button4_Click">
+                    <Button.ToolTip>
+                        <ToolTip>
+                            Генерирует и печатает массив в Список№1
+                            Печатает сортировку генерируемого массива в Список№2
+                        </ToolTip>
+                    </Button.ToolTip>
+                </Button>
+                <ListBox Height="344" Margin="0,-431,10,28" Name="listbox2" VerticalAlignment="Center" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Width="248"/>
+                <ListBox Height="344" Margin="0,-488,272,-28" Name="listbox1" VerticalAlignment="Center" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Width="241"/>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>
